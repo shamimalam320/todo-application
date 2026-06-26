@@ -51,12 +51,11 @@ pipeline{
                 sh 'docker compose up -d'
             }
         }
-
-    post{
-            always{
-                sh 'rm -rf*'
-            }
-        }    
-
     }
+    post{
+        always{
+         sh 'rm -rf*'
+        }
+    }    
+
 }
