@@ -35,7 +35,7 @@ services:
             MYSQL_DATABASE: tododb
 
         volumes:
-            - mysql-data: /var/lib/mysql    
+            - mysql-data:/var/lib/mysql
 
 
         networks:
@@ -46,7 +46,7 @@ networks:
         driver: bridge
         
 volumes:
-    mysql-data        
+    mysql-data:
 
 
 
